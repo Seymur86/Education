@@ -1,0 +1,136 @@
+@mixin font {
+  font-weight: bold;
+  text-align: left;
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+  background-color: #ff0000;
+  text-transform: uppercase;
+  border: none;
+}
+
+.btn {
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 30px 30px;
+  border-radius: 10px;
+  @include font;
+}
+
+.btn-column,
+.btn-column1,
+.btn-column2 {
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 15px;
+  font-weight: normal;
+  background-color: rgb(60, 179, 113);
+  border: none;
+  cursor: pointer;
+}
+
+.btn-column1 {
+  background-color: rgb(235, 180, 74);
+}
+
+.btn-column2 {
+  background-color: rgb(255, 94, 86);
+}
+
+@mixin team {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  line-height: 16px;
+  text-align: center;
+  font-weight: normal;
+  padding: 30px 30px;
+  text-transform: uppercase;
+  background-color: rgb(60, 179, 113);
+  border: none;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.team-btn {
+  @include team;
+}
+
+@mixin library {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  line-height: 16px;
+  text-align: center;
+  font-weight: normal;
+  width: 200px;
+  padding: 20px 10px;
+  margin-top: 15px;
+  text-transform: uppercase;
+  background-color: rgb(60, 179, 113);
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.btn-library,
+.btn-library1,
+.btn-library2 {
+  @include library;
+}
+
+.btn-library1 {
+  background-color: rgb(235, 180, 74);
+}
+
+.btn-library2 {
+  background-color: rgb(255, 94, 86);
+}
+
+.btn-store,
+.btn-store1,
+.btn-store2 {
+  width: 150px;
+  padding: 20px 20px;
+  color: #ff0000;
+  background-color: #ffff;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: normal;
+  border: none;
+}
+
+.btn-store1 {
+  color: rgb(235, 180, 74);
+}
+
+.btn-store2 {
+  color: rgb(60, 179, 113);
+}
+
+.final-btn {
+  color: #ffffff;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: normal;
+  width: 200px;
+  height: 70px;
+  background-color: #ff0000;
+  border: none;
+  border-radius: 10px;
+}

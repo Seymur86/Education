@@ -1,0 +1,30 @@
+body {
+  background-color: aqua;
+}
+
+header {
+  width: 100%;
+  background-color: #fff;
+
+  .container {
+    width: 1300px;
+    margin: 0 auto;
+  }
+
+  @mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-container {
+    width: 100%;
+    @include center;
+    padding: 50px 30px;
+    flex-direction: column;
+  }
+
+  .header-content img {
+    width: 100%;
+  }
+}
